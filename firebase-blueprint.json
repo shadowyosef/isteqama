@@ -1,0 +1,56 @@
+{
+  "firestore": {
+    "/users/{userId}/backups/{backupId}": {
+      "schema": { "$ref": "#/entities/UserBackup" },
+      "description": "Private encrypted-summary worship backups owned strictly by userId."
+    },
+    "/circles/{circleId}": {
+      "schema": { "$ref": "#/entities/KhatmaCircle" },
+      "description": "Shared Khatma worship circle keyed by 6-char inviteCode."
+    },
+    "/circles/{circleId}/members/{memberUid}": {
+      "schema": { "$ref": "#/entities/CircleMember" },
+      "description": "Per-member progress within a shared Khatma circle."
+    }
+  },
+  "entities": {
+    "UserBackup": {
+      "type": "object",
+      "required": ["ownerId", "label", "totalTasbeeh", "totalPagesRead", "currentStreak", "updatedAt"],
+      "properties": {
+        "ownerId": { "type": "string" },
+        "label": { "type": "string" },
+        "totalTasbeeh": { "type": "integer" },
+        "totalPagesRead": { "type": "integer" },
+        "currentStreak": { "type": "integer" },
+        "locksCount": { "type": "integer" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "KhatmaCircle": {
+      "type": "object",
+      "required": ["ownerId", "title", "inviteCode", "targetDays", "totalPagesRead", "memberUids", "createdAt", "updatedAt"],
+      "properties": {
+        "ownerId": { "type": "string" },
+        "title": { "type": "string" },
+        "inviteCode": { "type": "string" },
+        "targetDays": { "type": "integer" },
+        "totalPagesRead": { "type": "integer" },
+        "memberUids": { "type": "array" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "CircleMember": {
+      "type": "object",
+      "required": ["uid", "displayName", "pagesRead", "joinedAt", "updatedAt"],
+      "properties": {
+        "uid": { "type": "string" },
+        "displayName": { "type": "string" },
+        "pagesRead": { "type": "integer" },
+        "joinedAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

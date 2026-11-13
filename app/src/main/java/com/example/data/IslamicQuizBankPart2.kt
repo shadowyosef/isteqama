@@ -1,0 +1,57 @@
+package com.example.data
+
+import com.example.model.IslamicQuizCategory
+import com.example.model.IslamicQuizQuestion
+
+object IslamicQuizBankPart2 {
+    val questions = listOf(
+        IslamicQuizQuestion("q17", "من هو النبي الذي سخر الله له الريح وألان لأبيه الحديد؟", "Which prophet commanded the wind while his father softened iron?",
+            listOf("سليمان بن داود عليهما السلام", "موسى بن عمران", "إسماعيل عليه السلام", "يوسف عليه السلام"), listOf("Sulaiman ibn Dawood", "Musa", "Ismail", "Yusuf"), 0,
+            "ألان الله الحديد لداود وسخر الريح والجن لسليمان عليهما السلام.", "Iron was softened for Dawood and wind subjected to Sulaiman.", IslamicQuizCategory.PROPHETS),
+        IslamicQuizQuestion("q18", "من النبي الملقب بـ (كليم الله)؟", "Which prophet is titled Kaleemullah?",
+            listOf("موسى عليه السلام", "عيسى عليه السلام", "نوح عليه السلام", "إبراهيم عليه السلام"), listOf("Musa (AS)", "Isa (AS)", "Nuh (AS)", "Ibrahim (AS)"), 0,
+            "وكلم الله موسى تكليماً.", "Allah spoke directly to Prophet Musa (AS).", IslamicQuizCategory.PROPHETS),
+        IslamicQuizQuestion("q19", "من النبي الملقب بـ (خليل الله)؟", "Which prophet is titled Khalilullah?",
+            listOf("إبراهيم عليه السلام", "إسحاق عليه السلام", "يعقوب عليه السلام", "لوط عليه السلام"), listOf("Ibrahim (AS)", "Ishaq (AS)", "Ya'qub (AS)", "Lut (AS)"), 0,
+            "واتخذ الله إبراهيم خليلاً.", "Allah took Ibrahim (AS) as His close friend.", IslamicQuizCategory.PROPHETS),
+        IslamicQuizQuestion("q20", "من النبي الذي ابتلعه الحوت وسبّح الله في بطنه؟", "Which prophet was swallowed by the whale and praised Allah?",
+            listOf("يونس عليه السلام", "أيوب عليه السلام", "زكريا عليه السلام", "شعيب عليه السلام"), listOf("Yunus (AS)", "Ayyub (AS)", "Zakariya (AS)", "Shu'ayb (AS)"), 0,
+            "نادى في الظلمات أن لا إله إلا أنت سبحانك إني كنت من الظالمين.", "Prophet Yunus (AS) glorified Allah inside the whale.", IslamicQuizCategory.PROPHETS),
+        IslamicQuizQuestion("q21", "كم سنة لبث نوح عليه السلام يدعو قومه؟", "How many years did Prophet Nuh (AS) call his people?",
+            listOf("950 سنة", "500 سنة", "300 سنة", "1000 سنة"), listOf("950 years", "500 years", "300 years", "1000 years"), 0,
+            "فلبث فيهم ألف سنة إلا خمسين عاماً.", "He stayed among them 950 years (29:14).", IslamicQuizCategory.PROPHETS),
+        IslamicQuizQuestion("q22", "من النبي الذي أُوتي الصبر وضرب به المثل عند البلاء؟", "Which prophet is renowned as the pinnacle of patience in trial?",
+            listOf("أيوب عليه السلام", "هارون عليه السلام", "يحيى عليه السلام", "إدريس عليه السلام"), listOf("Ayyub (AS)", "Harun (AS)", "Yahya (AS)", "Idris (AS)"), 0,
+            "إنا وجدناه صابراً نعم العبد إنه أواب.", "Allah praised Prophet Ayyub (AS) for steadfast patience.", IslamicQuizCategory.PROPHETS),
+        IslamicQuizQuestion("q23", "من هما أول من بنيا القواعد من البيت الحرام؟", "Who raised the foundations of the Sacred House (Ka'bah)?",
+            listOf("إبراهيم وإسماعيل عليهما السلام", "موسى وهارون", "داود وسليمان", "نوح وسام"), listOf("Ibrahim & Ismail (AS)", "Musa & Harun", "Dawood & Sulaiman", "Nuh & Sam"), 0,
+            "وإذ يرفع إبراهيم القواعد من البيت وإسماعيل.", "Ibrahim and Ismail (AS) raised the Ka'bah's foundations.", IslamicQuizCategory.PROPHETS),
+        IslamicQuizQuestion("q24", "من هو النبي الذي تكلم في المهد صبياً؟", "Which prophet spoke in the cradle as a newborn?",
+            listOf("عيسى عليه السلام", "يحيى عليه السلام", "إسحاق عليه السلام", "إسماعيل عليه السلام"), listOf("Isa (AS)", "Yahya (AS)", "Ishaq (AS)", "Ismail (AS)"), 0,
+            "قال إني عبد الله آتاني الكتاب وجعلني نبياً.", "Prophet Isa (AS) spoke as an infant defending his mother.", IslamicQuizCategory.PROPHETS),
+        IslamicQuizQuestion("q25", "في أي عام هجري وقعت غزوة بدر الكبرى؟", "In which Hijri year did the Battle of Badr occur?",
+            listOf("السنة 2 هـ", "السنة 3 هـ", "السنة 5 هـ", "السنة 8 هـ"), listOf("Year 2 AH", "Year 3 AH", "Year 5 AH", "Year 8 AH"), 0,
+            "وقعت غزوة بدر في 17 رمضان سنة 2 هـ.", "Occurred on 17th Ramadan in 2 AH.", IslamicQuizCategory.SEERAH),
+        IslamicQuizQuestion("q26", "في أي عام وُلد النبي محمد ﷺ؟", "In which famous year was Prophet Muhammad ﷺ born?",
+            listOf("عام الفيل", "عام الحزن", "عام الوفود", "عام الفتح"), listOf("Year of the Elephant", "Year of Sorrow", "Year of Delegations", "Year of Conquest"), 0,
+            "وُلد النبي ﷺ في مكة في عام الفيل.", "Born in Makkah in the Year of the Elephant.", IslamicQuizCategory.SEERAH),
+        IslamicQuizQuestion("q27", "من هو رفيق النبي ﷺ في رحلة الهجرة في غار ثور؟", "Who accompanied the Prophet ﷺ in Cave Thawr during Hijrah?",
+            listOf("أبو بكر الصديق رضي الله عنه", "علي بن أبي طالب", "عمر بن الخطاب", "بلال بن رباح"), listOf("Abu Bakr (RA)", "Ali (RA)", "Umar (RA)", "Bilal (RA)"), 0,
+            "إذ يقول لصاحبه لا تحزن إن الله معنا.", "Abu Bakr As-Siddiq (RA) was his companion in the cave.", IslamicQuizCategory.SEERAH),
+        IslamicQuizQuestion("q28", "من الصحابي الذي نام في فراش النبي ﷺ ليلة الهجرة؟", "Who slept in the Prophet's bed on the night of Hijrah?",
+            listOf("علي بن أبي طالب رضي الله عنه", "أبو بكر الصديق", "سعد بن معاذ", "الزبير بن العوام"), listOf("Ali ibn Abi Talib (RA)", "Abu Bakr (RA)", "Sa'd ibn Mu'adh", "Az-Zubayr"), 0,
+            "بقي علي رضي الله عنه ليرد الأمانات إلى أهلها.", "Ali (RA) stayed to return trusts to their owners.", IslamicQuizCategory.SEERAH),
+        IslamicQuizQuestion("q29", "في أي غزوة أشار سلمان الفارسي رضي الله عنه بحفر الخندق؟", "In which battle did Salman Al-Farsi suggest digging a trench?",
+            listOf("غزوة الأحزاب (الخندق)", "غزوة أحد", "غزوة خيبر", "غزوة تبوك"), listOf("Battle of the Trench", "Battle of Uhud", "Battle of Khaybar", "Battle of Tabuk"), 0,
+            "وقعت غزوة الخندق في السنة الخامسة للهجرة.", "Took place in 5 AH around Madinah.", IslamicQuizCategory.SEERAH),
+        IslamicQuizQuestion("q30", "متى فُتحت مكة المكرمة؟", "When did the Conquest of Makkah take place?",
+            listOf("رمضان سنة 8 هـ", "شوال سنة 3 هـ", "ذو الحجة سنة 10 هـ", "محرم سنة 6 هـ"), listOf("Ramadan 8 AH", "Shawwal 3 AH", "Dhul-Hijjah 10 AH", "Muharram 6 AH"), 0,
+            "دخل المسلمون مكة في رمضان سنة 8 هـ وكسّروا الأصنام.", "Occurred in Ramadan 8 AH.", IslamicQuizCategory.SEERAH),
+        IslamicQuizQuestion("q31", "من أول من أسلم من النساء؟", "Who was the first woman to embrace Islam?",
+            listOf("خديجة بنت خويلد رضي الله عنها", "عائشة بنت أبي بكر", "فاطمة الزهراء", "أسماء بنت أبي بكر"), listOf("Khadijah (RA)", "Aisha (RA)", "Fatimah (RA)", "Asma (RA)"), 0,
+            "آمنت أم المؤمنين خديجة رضي الله عنها بالنبي ﷺ وآزرته منذ اللحظة الأولى.", "Khadijah bint Khuwaylid (RA) believed immediately.", IslamicQuizCategory.SEERAH),
+        IslamicQuizQuestion("q32", "من هو مؤذن الرسول ﷺ الأول؟", "Who was the first Mu'adhin of the Prophet ﷺ?",
+            listOf("بلال بن رباح رضي الله عنه", "أبو محذورة", "عبد الله بن أم مكتوم", "أبو ذر الغفاري"), listOf("Bilal ibn Rabah (RA)", "Abu Mahdhurah", "Ibn Umm Maktum", "Abu Dharr"), 0,
+            "بلال بن رباح رضي الله عنه مؤذن الإسلام الأول.", "Bilal (RA) called the very first Adhan in Islam.", IslamicQuizCategory.SEERAH)
+    )
+}

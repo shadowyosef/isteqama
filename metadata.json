@@ -1,0 +1,6 @@
+{
+  "name": "Istaqama",
+  "description": "Islamic routine enforcer and screen locker with complete Quran, Adhkar, Tasbeeh, and habit tracker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

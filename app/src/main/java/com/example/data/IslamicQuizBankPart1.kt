@@ -1,0 +1,57 @@
+package com.example.data
+
+import com.example.model.IslamicQuizCategory
+import com.example.model.IslamicQuizQuestion
+
+object IslamicQuizBankPart1 {
+    val questions = listOf(
+        IslamicQuizQuestion("q1", "ما هي السورة التي تسمى (عروس القرآن)؟", "Which Surah is called the Bride of the Quran?",
+            listOf("سورة الرحمن", "سورة يس", "سورة الواقعة", "سورة الملك"), listOf("Ar-Rahman", "Yaseen", "Al-Waqi'ah", "Al-Mulk"), 0,
+            "ورد في الأثر تسمية سورة الرحمن بعروس القرآن لجمال أسلوبها.", "Surah Ar-Rahman is known as the Bride of the Quran.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q2", "ما هي أعظم آية في كتاب الله تعالى؟", "What is the greatest Ayah in the Quran?",
+            listOf("آية الكرسي", "آية الدين", "خواتيم البقرة", "آية النور"), listOf("Ayat Al-Kursi", "Verse of Debt", "End of Baqarah", "Verse of Light"), 0,
+            "هي الآية 255 من سورة البقرة لاشتمالها على أعظم معاني التوحيد.", "Ayat Al-Kursi (2:255) is the greatest verse in the Quran.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q3", "ما هي السورة التي تعدل ثلث القرآن في الأجر؟", "Which Surah equals one third of the Quran?",
+            listOf("سورة الإخلاص", "سورة الفاتحة", "سورة الكافرون", "سورة الفلق"), listOf("Al-Ikhlas", "Al-Fatihah", "Al-Kafirun", "Al-Falaq"), 0,
+            "أخبر النبي ﷺ أن (قل هو الله أحد) تعدل ثلث القرآن.", "The Prophet ﷺ stated Surah Al-Ikhlas equals one third of the Quran.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q4", "ما هي السورة التي تبدأ دون البسملة في أولها؟", "Which Surah does NOT begin with Bismillah?",
+            listOf("سورة التوبة", "سورة الأنفال", "سورة النمل", "سورة سبأ"), listOf("At-Tawbah", "Al-Anfal", "An-Naml", "Saba"), 0,
+            "سورة التوبة هي الوحيدة في المصحف التي لا تبدأ بالبسملة.", "Surah At-Tawbah is the only Surah without Bismillah at its start.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q5", "ما هي السورة التي ذُكرت فيها البسملة مرتين؟", "Which Surah contains Bismillah twice?",
+            listOf("سورة النمل", "سورة الفاتحة", "سورة البقرة", "سورة هود"), listOf("An-Naml", "Al-Fatihah", "Al-Baqarah", "Hud"), 0,
+            "في مطلع السورة وفي رسالة سليمان عليه السلام: إنه من سليمان وإنه بسم الله الرحمن الرحيم.", "In its opening and inside Prophet Sulaiman's letter (27:30).", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q6", "ما هي أطول آية في القرآن الكريم؟", "What is the longest verse in the Quran?",
+            listOf("آية الدَّين", "آية الكرسي", "آية المواريث", "آية الحج"), listOf("Verse of Debt (2:282)", "Ayat Al-Kursi", "Inheritance verse", "Hajj verse"), 0,
+            "هي الآية رقم 282 في سورة البقرة وتعرف بآية الدَّين.", "Verse 282 of Surah Al-Baqarah is the longest Ayah.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q7", "ما هي أقصر سورة في القرآن الكريم؟", "Which is the shortest Surah in the Quran?",
+            listOf("سورة الكوثر", "سورة العصر", "سورة النصر", "سورة الإخلاص"), listOf("Al-Kawthar", "Al-Asr", "An-Nasr", "Al-Ikhlas"), 0,
+            "سورة الكوثر ثلاث آيات قصار وهي أقصر سور المصحف.", "Surah Al-Kawthar has three short verses.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q8", "كم عدد سور القرآن الكريم؟", "How many Surahs are in the Holy Quran?",
+            listOf("114 سورة", "110 سور", "120 سورة", "99 سورة"), listOf("114 Surahs", "110 Surahs", "120 Surahs", "99 Surahs"), 0,
+            "عدد سور القرآن الكريم 114 سورة بين مكية ومدنية.", "The Quran contains 114 Surahs.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q9", "كم عدد أجزاء القرآن الكريم؟", "How many Juz are in the Holy Quran?",
+            listOf("30 جزءاً", "20 جزءاً", "60 جزءاً", "25 جزءاً"), listOf("30 Juz", "20 Juz", "60 Juz", "25 Juz"), 0,
+            "ينقسم المصحف إلى 30 جزءاً و60 حزباً.", "The Quran is divided into 30 Juz and 60 Hizb.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q10", "ما هي السورة الملقبة بقلب القرآن؟", "Which Surah is known as the Heart of the Quran?",
+            listOf("سورة يس", "سورة الملك", "سورة الكهف", "سورة الواقعة"), listOf("Yaseen", "Al-Mulk", "Al-Kahf", "Al-Waqi'ah"), 0,
+            "تُعرف سورة يس بين العلماء والقراء بلقب قلب القرآن.", "Surah Yaseen is often called the Heart of the Quran.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q11", "ما هي السورة التي تشفع لقارئها وتنجيه من عذاب القبر؟", "Which Surah intercedes and protects from grave punishment?",
+            listOf("سورة الملك", "سورة السجدة", "سورة الدخان", "سورة الجن"), listOf("Al-Mulk", "As-Sajdah", "Ad-Dukhan", "Al-Jinn"), 0,
+            "قال النبي ﷺ: سورة تبارك هي المانعة من عذاب القبر.", "Surah Al-Mulk (Tabarak) protects its constant reciter.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q12", "ما أول آيات نزلت من القرآن الكريم؟", "Which verses were revealed first?",
+            listOf("اقرأ باسم ربك الذي خلق", "يا أيها المدثر", "الحمد لله رب العالمين", "الم ذلك الكتاب"), listOf("Iqra bismi Rabbik", "Ya ayyuhal muddaththir", "Al-Fatihah", "Alif Lam Mim"), 0,
+            "نزلت الآيات الخمس الأولى من سورة العلق في غار حراء.", "The first five verses of Surah Al-Alaq in Cave Hira.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q13", "كم عدد السجدات في القرآن الكريم؟", "How many verses of prostration (Sajdah Tilawah) are in the Quran?",
+            listOf("15 سجدة", "10 سجدات", "7 سجدات", "20 سجدة"), listOf("15 Sajdahs", "10 Sajdahs", "7 Sajdahs", "20 Sajdahs"), 0,
+            "في القرآن الكريم 15 موضعاً لسجدة التلاوة على الراجح.", "There are 15 positions of Sajdah Tilawah in the Quran.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q14", "من الصحابي الذي ذُكر اسمه صريحاً في القرآن؟", "Which companion is explicitly named in the Quran?",
+            listOf("زيد بن حارثة رضي الله عنه", "أبو بكر الصديق", "عمر بن الخطاب", "عثمان بن عفان"), listOf("Zayd ibn Harithah", "Abu Bakr", "Umar", "Uthman"), 0,
+            "ذُكر اسمه في سورة الأحزاب الآية 37: فلما قضى زيد منها وطراً.", "Named in Surah Al-Ahzab verse 37.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q15", "في أي ليلة نزل القرآن الكريم جملة إلى السماء الدنيا؟", "On which night was the Quran sent down?",
+            listOf("ليلة القدر", "ليلة النصف من شعبان", "ليلة عاشوراء", "أول ذي الحجة"), listOf("Laylatul Qadr", "Mid-Sha'ban", "Ashura", "1st Dhul-Hijjah"), 0,
+            "إنا أنزلناه في ليلة القدر.", "Surah Al-Qadr affirms it was revealed on Laylatul Qadr.", IslamicQuizCategory.QURAN),
+        IslamicQuizQuestion("q16", "ما هي السورة التي خُتمت باسم نبيين؟", "Which Surah ends by mentioning two prophets?",
+            listOf("سورة الأعلى", "سورة الضحى", "سورة التين", "سورة الشرح"), listOf("Al-A'la", "Ad-Duha", "At-Tin", "Ash-Sharh"), 0,
+            "ختمت بـ: صحف إبراهيم وموسى.", "Ends with 'Scriptures of Ibrahim and Musa'.", IslamicQuizCategory.QURAN)
+    )
+}

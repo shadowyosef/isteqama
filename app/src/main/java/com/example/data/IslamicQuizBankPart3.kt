@@ -1,0 +1,57 @@
+package com.example.data
+
+import com.example.model.IslamicQuizCategory
+import com.example.model.IslamicQuizQuestion
+
+object IslamicQuizBankPart3 {
+    val questions = listOf(
+        IslamicQuizQuestion("q33", "كم عدد التكبيرات الزوائد في الركعة الأولى من صلاة العيد؟", "How many extra Takbeers are in the 1st Rak'ah of Eid prayer?",
+            listOf("سبع تكبيرات", "خمس تكبيرات", "ثلاث تكبيرات", "تسع تكبيرات"), listOf("7 Takbeers", "5 Takbeers", "3 Takbeers", "9 Takbeers"), 0,
+            "يكبّر المصلي في الركعة الأولى 7 تكبيرات بعد تكبيرة الإحرام.", "Seven extra Takbeers after opening Takbeer.", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q34", "كم عدد ركعات السنن الرواتب المؤكدة في اليوم والليلة؟", "How many confirmed Sunnah Rawatib Rak'ahs are prayed daily?",
+            listOf("12 ركعة", "10 ركعات", "8 ركعات", "14 ركعة"), listOf("12 Rak'ahs", "10 Rak'ahs", "8 Rak'ahs", "14 Rak'ahs"), 0,
+            "من صلى اثنتي عشرة ركعة تطوعاً بنى الله له بيتاً في الجنة.", "2 before Fajr, 4 before & 2 after Dhuhr, 2 after Maghrib, 2 after Isha.", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q35", "ما نسبة الزكاة الواجبة في المال والنقود إذا بلغ النصاب وحال الحول؟", "What is the obligatory Zakat rate on cash held for one lunar year?",
+            listOf("2.5% (ربع العشر)", "5%", "10%", "1%"), listOf("2.5%", "5%", "10%", "1%"), 0,
+            "زكاة النقدين وعروض التجارة ربع العشر أي 2.5%.", "Zakat on wealth above Nisab is 2.5%.", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q36", "ما هي الأيام البيض التي يُستحب صيامها كل شهر هجري؟", "Which Hijri dates are known as the White Days (Al-Ayyam Al-Beed)?",
+            listOf("13 و14 و15", "1 و2 و3", "9 و10 و11", "27 و28 و29"), listOf("13th, 14th, 15th", "1st, 2nd, 3rd", "9th, 10th, 11th", "27th, 28th, 29th"), 0,
+            "أوصى النبي ﷺ بصيام ثلاثة أيام من كل شهر وهي الأيام البيض.", "13th, 14th, and 15th of each Hijri month.", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q37", "صيام أي يوم يكفّر السنة الماضية والسنة القادمة؟", "Fasting which day expiates the past year and coming year?",
+            listOf("يوم عرفة لغير الحاج", "يوم الإثنين", "أول محرم", "النصف من شعبان"), listOf("Day of Arafah", "Monday", "1st Muharram", "Mid-Sha'ban"), 0,
+            "صيام يوم عرفة أحتسب على الله أن يكفر السنة التي قبله والتي بعده.", "Day of Arafah (9th Dhul-Hijjah) for non-pilgrims.", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q38", "ما هي الصلاة التي تفتقر إلى ركوع وسجود؟", "Which prayer has neither Ruku nor Sujud?",
+            listOf("صلاة الجنازة", "صلاة الكسوف", "صلاة الاستسقاء", "صلاة الضحى"), listOf("Janazah (Funeral) Prayer", "Eclipse Prayer", "Rain Prayer", "Duha Prayer"), 0,
+            "صلاة الجنازة أربع تكبيرات وقراءة ودعاء بلا ركوع أو سجود.", "Funeral prayer consists of four Takbeers while standing.", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q39", "ما هما البردان اللذان من حافظ عليهما دخل الجنة؟", "What are the 'Two Cool Prayers' (Al-Bardayn) promised Paradise?",
+            listOf("الفجر والعصر", "المغرب والعشاء", "الظهر والفجر", "العصر والمغرب"), listOf("Fajr & Asr", "Maghrib & Isha", "Dhuhr & Fajr", "Asr & Maghrib"), 0,
+            "من صلى البردين دخل الجنة (الصبح والعصر).", "Fajr and Asr are called Al-Bardayn in Sahih Hadith.", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q40", "كم نصاب الذهب الواجب فيه الزكاة بالغرام؟", "What is the Shar'i Nisab threshold for gold in grams?",
+            listOf("85 جراماً من الذهب الخالص", "50 جراماً", "100 جرام", "200 جرام"), listOf("85 grams pure gold", "50 grams", "100 grams", "200 grams"), 0,
+            "يعادل عشرين مثقالاً أي نحو 85 جراماً من الذهب عيار 24.", "Equivalent to 20 Mithqal (~85g of 24K gold).", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q41", "ما هي أعظم سورة يقرؤها المسلم في كل ركعة؟", "Which Surah is an obligatory pillar in every Rak'ah of prayer?",
+            listOf("سورة الفاتحة", "سورة الإخلاص", "سورة الناس", "سورة العصر"), listOf("Al-Fatihah", "Al-Ikhlas", "An-Nas", "Al-Asr"), 0,
+            "لا صلاة لمن لم يقرأ بفاتحة الكتاب.", "Al-Fatihah is a pillar of every Rak'ah.", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q42", "ما هو الدعاء الجامع المأثور بين السجدتين؟", "What is the recommended supplication between the two prostrations?",
+            listOf("رب اغفر لي وارحمني", "سبحان ربي العظيم", "ربنا ولك الحمد", "التحيات لله"), listOf("Rabbi-ghfir li", "Subhana Rabbiyal Azeem", "Rabbana walakal hamd", "At-Tahiyyat"), 0,
+            "كان النبي ﷺ يقول بين السجدتين: رب اغفر لي، رب اغفر لي.", "Saying 'Rabbi-ghfir li' between the two Sujuds.", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q43", "ما أقل عدد لركعات صلاة الضحى؟", "What is the minimum number of Rak'ahs for Duha prayer?",
+            listOf("ركعتان", "أربع ركعات", "ست ركعات", "ثماني ركعات"), listOf("2 Rak'ahs", "4 Rak'ahs", "6 Rak'ahs", "8 Rak'ahs"), 0,
+            "تجزئ عن صدقات المفاصل ركعتا الضحى.", "Two Rak'ahs satisfy the charity for all 360 joints.", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q44", "ما حكم صلاة الجماعة عند سماع النداء لمن لا عذر له؟", "What is the best place to perform the 5 daily prayers for men?",
+            listOf("في المسجد مع الجماعة", "في البيت منفرداً", "تأخيرها لآخر الوقت", "جمعها دائماً"), listOf("In Masjid in congregation", "Alone at home", "Delayed", "Combined daily"), 0,
+            "صلاة الجماعة تفضل صلاة الفذ بسبع وعشرين درجة.", "Prayer in congregation excels solitary prayer by 27 degrees.", IslamicQuizCategory.FIQH),
+        IslamicQuizQuestion("q45", "من هو الصحابي الذي لقب بـ (سيف الله المسلول)؟", "Which companion was titled 'The Drawn Sword of Allah'?",
+            listOf("خالد بن الوليد رضي الله عنه", "أبو عبيدة بن الجراح", "حمزة بن عبد المطلب", "مصعب بن عمير"), listOf("Khalid ibn Al-Walid", "Abu Ubaydah", "Hamzah", "Mus'ab ibn Umayr"), 0,
+            "سمّاه النبي ﷺ سيف الله المسلول في يوم مؤتة.", "Named so by the Prophet ﷺ after the Battle of Mu'tah.", IslamicQuizCategory.SEERAH),
+        IslamicQuizQuestion("q46", "من هو الصحابي الذي اهتز لموته عرش الرحمن؟", "For which companion's death did the Throne of Allah shake?",
+            listOf("سعد بن معاذ رضي الله عنه", "أبو ذر الغفاري", "سلمان الفارسي", "زيد بن ثابت"), listOf("Sa'd ibn Mu'adh (RA)", "Abu Dharr", "Salman Al-Farsi", "Zayd ibn Thabit"), 0,
+            "أخبر النبي ﷺ أن عرش الرحمن اهتز لموت سعد بن معاذ سيد الأوس.", "Sa'd ibn Mu'adh (RA), chief of the Aws.", IslamicQuizCategory.SEERAH),
+        IslamicQuizQuestion("q47", "من هو أول خليفة للمسلمين بعد رسول الله ﷺ؟", "Who was the first Caliph of Islam after the Prophet ﷺ?",
+            listOf("أبو بكر الصديق رضي الله عنه", "عمر بن الخطاب", "عثمان بن عفان", "علي بن أبي طالب"), listOf("Abu Bakr As-Siddiq", "Umar ibn Al-Khattab", "Uthman ibn Affan", "Ali ibn Abi Talib"), 0,
+            "بويع أبو بكر الصديق في سقيفة بني ساعدة سنة 11 هـ.", "Abu Bakr As-Siddiq (RA) was the first Rightly Guided Caliph.", IslamicQuizCategory.SEERAH),
+        IslamicQuizQuestion("q48", "ما الكلمة التي هي كنز من كنوز الجنة؟", "Which phrase is described as a treasure from the treasures of Paradise?",
+            listOf("لا حول ولا قوة إلا بالله", "سبحان الله وبحمده", "الله أكبر", "ما شاء الله"), listOf("La hawla wa la quwwata illa billah", "SubhanAllahi wa bihamdihi", "Allahu Akbar", "MashaAllah"), 0,
+            "أخبر النبي ﷺ أبا موسى الأشعري أنها كنز من كنوز الجنة.", "Taught by the Prophet ﷺ as a treasure of Paradise.", IslamicQuizCategory.QURAN)
+    )
+}
